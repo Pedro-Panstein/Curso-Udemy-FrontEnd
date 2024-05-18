@@ -41,3 +41,38 @@ html {
     border-top: 1px dashed #ddd;
     border-bottom: 1px dashed #ddd;
 }
+
+/* Quotes */
+.quotes-container{
+    background-color: #DDD;
+    padding: 30px;
+}
+
+.quotes-container blockquote{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.quotes-container p{
+    font-style: italic;
+}
+
+/* Curiosidades */
+.curiosites-container{
+    padding: 25px 0;
+    text-align: start;
+    margin: 25px 0;
+    border-top: 7px dashed #DDD;
+    border-bottom: 1px dashed #DDD;
+}
+
+.curiosites-container li{
+    height: 30px;
+}
+
+/* imagem bold */
+
+.img-bold{
+    font-weight: bold;
+    text-align: center;
+}
