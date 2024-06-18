@@ -16,9 +16,60 @@
             <input type="text">
         </div>
         <!-- atributo name -->
-        <label>Idade:</label>
-        <input type="text" name="age">
+        <div>
+            <label for="age">Idade:</label>
+            <input type="text" name="age">
+        </div>
     </form>
+
+    <!-- select -->
+    <div>
+        <label for="job">Selecione a sua profissão</label>
+        <select name="job">
+            <option value="programador">Programador</option>
+            <option value="tester">Tester/QA</option>
+            <option value="devops">DevOps</option>
+        </select>
+    </div>
+
+    <!-- atributo selected -->
+    <div>
+        <label for="contract">Você leu os termos do contrato?</label>
+        <select name="contract" >
+            <option value="sim">Sim</option>
+            <option value="nao" selected>Não</option>
+        </select>
+    </div>
+
+    <!-- Multiplas opções -->
+    <div>
+        <label for="Items">Selecione os itens desejados</label>
+        <select name="items" multiple>
+            <option value="pera">Pera</option>
+            <option value="feijao">Feijão</option>
+            <option value="arroz">Arroz</option>
+            <option value="milho">Milho</option>
+        </select>
+    </div>
+
+    <!-- Text area -->
+    <div>
+        <label for="comment">Adicione um comentário:</label>
+        <textarea name="comment">insira um texto</textarea>
+    </div>
+
+    <!-- Fieldset e legend -->
+    <div>
+        <fieldset>
+            <legend>Preencha as suas informações:</legend>
+            <label for="firstname">Nome:</label>
+            <input type="text" name="firstname">
+            <label for="lastname">Sobrenome:</label>
+            <input type="text" name="lastname">
+        </fieldset>
+    </div>
+
+    <input type="submit" value="Enviar">
 
 </body>
 </html>
