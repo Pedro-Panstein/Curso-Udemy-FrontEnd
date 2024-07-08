@@ -101,8 +101,26 @@ textarea{
 
 .optional-list li{
     list-style: none;
+    margin-bottom: 5px;
 }
 
 .box-input p{
     margin-bottom: 20px;
+}
+
+.btn-submit{
+    background-color: #673ab7;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn-submit:hover{
+    background-color: #fff;
+    border-color: #673ab7;
+    color: #673ab7;
 }

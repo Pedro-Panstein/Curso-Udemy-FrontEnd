@@ -1,0 +1,40 @@
+/* Padrão de breakpoints
+- 600px e abaixo: Celular
+- 768px até 600px: Tablets
+- 992px até 768px: Mini laptops
+- 992px e acima: Laptops e Desktop */
+
+/* 2 - Media query */
+h1{
+    color: red;
+}
+
+@media screen and (max-width: 500px){
+    h1{
+        color: blue;
+    }
+}
+
+p{
+    background-color: red;
+    color: black;
+}
+
+/* 3 - min-width */
+@media screen and (min-width: 800px) {
+    p{
+        background-color: #789;
+        color: red;
+    }
+}
+
+/* 4 - Landscape */
+h3{
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    h3{
+        display: block;
+    }
+}
