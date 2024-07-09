@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+p {
+  color: #70747a;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232a31;
+    padding: 1%;
+}
+
+header a{
+    text-transform: uppercase;
+    padding: 0 .5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #ccc;
+    transition: .3s;
+}
+
+header img{
+    object-fit: contain;
+    height: 4rem;
+    width: 4rem;
+}
+
+.header-enter{
+    background-color: #2cc76a;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.background-hdc {
+    background-image: url("img/mainbanner.png");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    margin-bottom: 10%;
+}
+
+.background-hdc h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 4rem;
+    text-shadow: #000 3px 2px 3px;
+}
+
+.background-hdc h3{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: #000 3px 2px 3px;
+}
+
+.benefits{
+    display: flex;
+    text-align: center;
+    padding: 0 6%;
+    margin-bottom: 10%;
+}
+
+.benefits div h3{
+    font-size: 1.5rem;
+    padding-bottom: 5%; 
+}
+
+.benefits div p{
+    font-size: 1.3rem;
+    padding: 0 8%;
+    line-height: 2.1rem;
+}
+
+.fas{
+    font-size: 5rem;
+    padding-bottom: 3%;
+}
+
+.fa-shield-alt {
+    color: #2cc76a;
+}
+  
+.fa-rocket {
+    color: #ef3f29;
+}
+  
+.fa-comments {
+    color: #ef8f29;
+}
+
+.plans-and-prices{
+    text-align: center;
+}
+
+.plans-and-prices h1{
+    font-size: 3rem;
+    margin-bottom: .5%;
+}
+
+.plans-and-prices p{
+    font-size: 1.5rem;
+    
+}
+
