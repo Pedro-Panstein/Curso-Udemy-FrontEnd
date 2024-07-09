@@ -104,7 +104,7 @@ header img{
     color: #ef8f29;
 }
 
-.plans-and-prices{
+.plans-and-prices h1, .select{
     text-align: center;
 }
 
@@ -113,8 +113,24 @@ header img{
     margin-bottom: .5%;
 }
 
-.plans-and-prices p{
-    font-size: 1.5rem;
-    
+.select{
+    font-size: 1.5rem;   
+}
+
+.know-more{
+    display: inline-block;
+}
+
+.know-more h5{
+    display: inline;
+    background-color: #2cc76a;
+    padding: 27% 3%;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.know-more h3{
+    background-color: #232a31;
 }
 
