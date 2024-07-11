@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hDC HOST</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -15,7 +16,7 @@
             <a href="#">home</a>
             <a href="#">preços</a>
             <a href="#">contato</a>
-            <a class="header-enter" href="#">entrar</a>
+            <a class="header-enter" onclick="alert('Você entrou')" href="#">entrar</a>
         </div>
     </header>
 
@@ -53,18 +54,79 @@
         <section class="plans-and-prices">
             <h1>Planos e Preços</h1>
             <p class="select">Selecione o plano que atende as suas necessidades</p>
-            <div class="know-more">
-                <h5>R$15/mês</h5>
-                <h3>básico</h3>
-                <ul>
-                    <li>2GB de espaço</li>
-                    <li>10 Subdomains</li>
-                    <li>25 contas de e-mail</li>
-                    <li>C-panel</li>
-                    <li>suporte 24/7</li>
-                </ul>
-                <a href="#">Saber mais</a>
+        <div class="div-know-more">
+            <div>
+                <div class="know-more" id="responsive-more">
+                    <h5>R$15/mês</h5>
+                    <h3>básico</h3>
+                    <ul>
+                        <li>2GB de espaço</li>
+                        <li>10 Subdomains</li>
+                        <li>25 contas de e-mail</li>
+                        <li>C-panel</li>
+                        <li>suporte 24/7</li>
+                    </ul>
+                    <a href="#">Saber mais</a>
+                </div>
+                <div class="know-more">
+                    <h5>R$30/mês</h5>
+                    <h3>dedicado</h3>
+                    <ul>
+                        <li>5GB de espaço</li>
+                        <li>20 Subdomains</li>
+                        <li>50 contas de e-mail</li>
+                        <li>C-panel</li>
+                        <li>suporte 24/7</li>
+                    </ul>
+                    <a href="#">Saber mais</a>
+                </div>
             </div>
+            <div>
+                <div class="know-more-plus">
+                    <h5>R$50/mês</h5>
+                    <h3>dedicado plus</h3>
+                    <ul>
+                        <li>10GB de espaço</li>
+                        <li>100 Subdomains</li>
+                        <li>100 contas de e-mail</li>
+                        <li>C-panel</li>
+                        <li>suporte 24/7</li>
+                    </ul>
+                    <a href="#">Saber mais</a>
+                </div>
+                <div class="know-more">
+                    <h5>R$100/mês</h5>
+                    <h3>cloud</h3>
+                    <ul>
+                        <li>20GB de espaço</li>
+                        <li>200 Subdomains</li>
+                        <li>200 contas de e-mail</li>
+                        <li>C-panel</li>
+                        <li>suporte 24/7</li>
+                    </ul>
+                    <a href="#">Saber mais</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="domain">
+            <h1>Qual domínio você quer usar para o seu site?</h1>
+            <h3>Verifique se o domínio está disponível</h3>
+            <form method="post">
+                <input type="text" placeholder="Digite o domínio desejado">
+                <input type="submit" value="Procurar domínio" onclick="alert('Você enviou')">
+            </form>
+        </section>
+        <section class="message">
+            <h1>Mande uma mensagem</h1>
+            <h3>Envie a sua mensagem, em até 4 horas um especialista entrará em contato</h3>
+            <form method="post">
+                <input type="text" placeholder="Seu nome">
+                <input type="email" placeholder="Seu e-mail">
+                <textarea name="comment" placeholder="Descreva o que precisa ou seu projeto..."></textarea>
+                <input type="submit" value="Enviar" onclick="alert('Você enviou')">
+            </form>
+            <p>hDC Host @ 2022</p>
         </section>
     </main>
 </body>

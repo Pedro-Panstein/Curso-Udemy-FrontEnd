@@ -1,0 +1,89 @@
+@media screen and (max-width: 1640px) {
+    .know-more h5{
+        padding: 3rem 1rem;
+    }
+    
+    .know-more-plus h5{
+        padding: 3rem 1rem;
+    }    
+    
+    .know-more a {
+        padding: 2rem 5rem 2rem 5rem;
+    }
+    
+    .know-more-plus a {
+        padding: 2rem 5rem 2rem 5rem;
+    }
+    
+    .know-more li, .know-more-plus li{
+        padding: 1.5rem 3rem 1.5rem 3rem;
+    }
+}
+
+@media screen and (max-width: 1380px){
+    .know-more li, .know-more-plus li{
+        padding: 1.5rem 1rem 1.5rem 1rem;
+    }
+    
+    .know-more a {
+        padding: 2rem 3rem 2rem 3rem;
+    }
+    
+    .know-more-plus a {
+        padding: 2rem 3.5rem 2rem 3.5rem;
+    }
+}
+
+@media screen and (max-width: 1135px){
+    .div-know-more{
+        display: block;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+    #responsive-more{
+        margin-right: 8rem;
+    }
+
+    .know-more {
+        margin-bottom: 10%;
+    }
+
+    .know-more-plus{
+        margin-right: 8rem;
+    }
+
+    .know-more h5{
+        padding: 3rem 1rem;
+    }
+    
+    .know-more-plus h5{
+        padding: 3rem 1rem;
+    }    
+    
+    .know-more a {
+        padding: 2rem 5rem 2rem 5rem;
+    }
+    
+    .know-more-plus a {
+        padding: 2rem 5rem 2rem 5rem;
+    }
+    
+    .know-more li, .know-more-plus li{
+        padding: 1.5rem 3rem 1.5rem 3rem;
+    }
+}
+
+@media screen and (max-width: 761px) {
+    #responsive-more{
+        margin-right: 1rem;
+    }
+
+    .know-more-plus{
+        margin-right: 1rem;
+    }    
+
+    .know-more {
+        margin-bottom: 15%;
+    }
+}
