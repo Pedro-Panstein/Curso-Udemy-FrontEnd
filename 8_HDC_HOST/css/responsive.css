@@ -86,6 +86,21 @@
     .know-more li, .know-more-plus li{
         padding: 1.5rem 3rem 1.5rem 3rem;
     }
+
+    .domain h1{
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 937px){
+    .background-hdc h1{
+        font-size: 3rem;
+        padding-top: 20%;
+    }
+
+    .background-hdc h3{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 761px) {
@@ -107,6 +122,19 @@
 }
 
 @media screen and (max-width: 646px){
+    .background-hdc h1{
+        padding-top: 20%;
+        font-size: 3rem;
+    }
+
+    .background-hdc h3{
+        font-size: .8rem;
+    }
+
+    .background-hdc {
+        height: 40vh;
+    }
+    
     #responsive-more{
         margin-right: 0rem;
     }
@@ -118,5 +146,83 @@
     .know-more-plus{
         margin-right: 0rem;
         margin-bottom: 18%;
-    }    
+    }
+    
+    .benefits{
+        display: block;
+        padding: 0 10%;
+        margin-bottom: 10%;
+    }
+
+    .benefits div{
+        margin-bottom: 10%;
+    }
+
+    .benefits div h3{
+        font-size: 1.8rem;
+    }
+
+    .benefits div p{
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+        text-align: justify;
+    }
+
+    .domain h1{
+        font-size: 1.5rem;
+        padding-top: 10%;
+        margin: 0 10%;
+    }
+
+    .domain h3{
+        font-size: 1.2rem;
+        margin-bottom: 7%;
+    }
+}
+
+@media screen and (max-width: 456px){
+    .select{
+        margin-bottom: 20%;
+    }
+    
+    .know-more{
+        margin-bottom: 30%;
+    }
+
+    .know-more-plus{
+        margin-bottom: 30%;
+    }
+}
+
+@media screen and (max-width: 456px){
+    header a{
+        padding: 0 .5rem;
+        font-size: .6rem;
+    }  
+    
+    header img{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .plans-and-prices h1{
+        font-size: 2.5rem
+    }
+
+    .select{
+        font-size: 1rem;
+        padding: 0% 5%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .background-hdc h1{
+        padding-top: 30%;
+        font-size: 2rem;
+    }
+
+    .background-hdc h3{
+        font-size: 1rem;
+        padding: 2% 5%;
+    }
 }
