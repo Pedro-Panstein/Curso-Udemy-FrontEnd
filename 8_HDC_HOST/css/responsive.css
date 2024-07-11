@@ -21,6 +21,14 @@
 }
 
 @media screen and (max-width: 1380px){
+    .fas{
+        font-size: 4rem;
+    }
+
+    .benefits div p{
+        font-size: 1rem;
+    }
+
     .know-more li, .know-more-plus li{
         padding: 1.5rem 1rem 1.5rem 1rem;
     }
@@ -35,6 +43,12 @@
 }
 
 @media screen and (max-width: 1135px){
+
+    .benefits div p{
+        font-size: .8rem;
+        line-height: 1.5rem;
+    }
+
     .div-know-more{
         display: block;
         margin-bottom: 2%;
@@ -75,6 +89,10 @@
 }
 
 @media screen and (max-width: 761px) {
+    .select{
+        margin-bottom: 10%;
+    }
+
     #responsive-more{
         margin-right: 1rem;
     }
@@ -86,4 +104,19 @@
     .know-more {
         margin-bottom: 15%;
     }
+}
+
+@media screen and (max-width: 646px){
+    #responsive-more{
+        margin-right: 0rem;
+    }
+
+    .know-more {
+        margin-bottom: 18%;
+    }
+
+    .know-more-plus{
+        margin-right: 0rem;
+        margin-bottom: 18%;
+    }    
 }
