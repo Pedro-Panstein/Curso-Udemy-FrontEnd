@@ -212,3 +212,4 @@ switch (j) {
     default:
         console.log("O J não foi encontrado")
 }
+
