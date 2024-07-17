@@ -207,3 +207,10 @@ const num = 6
 
 const result = factorial(num)
 console.log(`O fatorial do número ${num} é ${result}`)
+
+const informations = (idade, rua = "Marcelo Barbi") => {
+    return `${rua}, ${idade}`
+}
+
+console.log(informations(12))
+console.log(informations(12, "joão"))
