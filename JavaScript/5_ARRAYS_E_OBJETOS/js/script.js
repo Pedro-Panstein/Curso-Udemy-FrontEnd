@@ -9,7 +9,8 @@ const item = ["Pedro", true, 2, 4.12]
 console.log(item)
 
 // 2 - mais sobre arrays
-
+const arr = ["a", "b", "c", "d"]
+console.log(arr[3])
 
 // 3 - propriedades
 const numbers = [5, 3, 1]
