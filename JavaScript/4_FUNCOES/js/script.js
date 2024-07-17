@@ -187,7 +187,7 @@ const untilTen = (n, m) => {
 
 untilTen(100, 7)
 
-// infinite recursion
+// // infinite recursion
 // function run(){
 //    console.log("Executanto..")
 //    run();
