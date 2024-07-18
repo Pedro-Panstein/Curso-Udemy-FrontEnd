@@ -227,19 +227,110 @@
 // console.log(reverseTest)
 
 // // 18 - trim
-const trimTest = "   testando \n  "
-console.log(trimTest)
-console.log(trimTest.trim())
+// const trimTest = "   testando \n  "
+// console.log(trimTest)
+// console.log(trimTest.trim())
 
-console.log(trimTest.length)
-console.log(trimTest.trim().length)
+// console.log(trimTest.length)
+// console.log(trimTest.trim().length)
 
-// 19 - padStart e padEnd 
-const testePadStart = "1"
+// // 19 - padStart e padEnd 
+// const testePadStart = "1"
 
-const numNumber = testePadStart.padStart(4, "0")
-console.log(numNumber)
-console.log(testePadStart)
+// const numNumber = testePadStart.padStart(4, "0")
+// console.log(numNumber)
+// console.log(testePadStart)
 
-const testepadEnd = numNumber.padEnd(10, "0")
-console.log(testepadEnd)
+// const testepadEnd = numNumber.padEnd(10, "0")
+// console.log(testepadEnd)
+
+// // 20 - split
+// const frase = "O rato roeu a roupa do rei de Roma"
+
+// const arrayDaFrase = frase.split(" ")
+
+// console.log(arrayDaFrase)
+
+// // 21 - join
+// const fraseDenovo = arrayDaFrase.join(" ")
+// console.log(fraseDenovo)
+
+// const itensParaComprar = ["Mouse", "Teclado", "Monitor"]
+
+// const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(", ")}.`
+// console.log(fraseDeCompra)
+
+// // 22 - repeat
+// const testeRepeat = "Testando "
+// console.log(testeRepeat.repeat(5))
+
+// // 23 - rest operator  IMPORTANTE
+// const someInfinita = (...args) => {
+//     let total = 0
+//     for (let i = 0; i < args.length; i++) {
+//         total += args[i]
+//     }
+//     return total
+// }
+
+// console.log(someInfinita(1, 2, 3)) 
+// console.log(someInfinita(1, 2, 124, 12, 553643, 754, 754, 13425, 64325))
+
+// // 24 - for...of  IMPORTANTE
+// const somaInfinita2 = (...args) => {
+//     let total = 0
+//     for (num of args) {
+//         total += num
+//     }
+//     return total
+// }
+
+// console.log(somaInfinita2(1, 2, 3))
+// console.log(somaInfinita2(1, 2, 124, 12, 553643, 754, 754, 13425, 64325))
+
+// // 25 - destructuring em objetos
+// const userDetails = {
+//     firtName: "Pedro",
+//     lastName: "Panstein",
+//     job: "Programador"
+// }
+
+// const { firtName, lastName, job } = userDetails
+
+// console.log(firtName, lastName, job)
+
+// // renomear variáveis
+// const { firtName: primeiroNome, lastName: ultimoNome } = userDetails
+
+// console.log(primeiroNome)
+// console.log(ultimoNome)
+
+// // 26 - destructuring com arrays
+// const myList = ["Avião", "Submarino", "Carro", "Trator"]
+
+// const [veiculoA, veiculoB, veiculoC] = myList
+// console.log(veiculoA, veiculoB, veiculoC)
+
+// 27 - JSON
+const myJson = '{"name": "Pedro", "age": 31, "skills": ["PHP", "JavaScript", "Python"]}'
+console.log(myJson)
+console.log(typeof myJson)
+
+// 28 - JSon para objeto e objeto para JSon
+// Converte o JSON
+const myObject = JSON.parse(myJson)
+console.log(myObject)
+console.log(myObject.name)
+console.log(typeof myObject)
+
+// Json inválido
+const badJson = `{"name": Pedro, "age": 17}`
+// const myBadJson = JSON.parse(badJson)
+
+myObject.isOpenToWork = true
+console.log(myObject)
+
+// Volta pra JSON
+const myNemJson = JSON.stringify(myObject)
+console.log(myNemJson)
+console.log(typeof myNemJson)
