@@ -174,24 +174,72 @@
 
 // console.log(teste.lastIndexOf("Cachorro"))
 
-// console.log(teste.indexOf("abobado"))
 
-// 14 - slice
-const teste2 = ["a", "b", "c", "d", "e", "f"]
+// // 14 - slice
+// const teste2 = ["a", "b", "c", "d", "e", "f"]
 
-const subArray = teste2.slice(2, 4)
+// const subArray = teste2.slice(2, 4)
 
-console.log(teste2)
-console.log(subArray)
+// console.log(teste2)
+// console.log(subArray)
 
-const subArray2 = teste2.slice(2, 4 + 1)
+// const subArray2 = teste2.slice(2, 4 + 1)
 
-console.log(subArray2)
+// console.log(subArray2)
 
-const subArray3 = teste2.slice(10, 20)
-console.log(subArray3)
+// const subArray3 = teste2.slice(10, 20)
+// console.log(subArray3)
 
-const subArray4 = teste2.slice(2)
-console.log(subArray4)
+// const subArray4 = teste2.slice(2)
+// console.log(subArray4)
 
-// 15 - forEach
+// // 15 - forEach
+// const nums = [1, 2, 3, 4, 5]
+
+// nums.forEach((n) => {
+//     console.log(`O numero é ${n}`)
+// })
+
+// const posts = [
+//     { title: "Primeiro post", category: "PHP" },
+//     { title: "Segundo post", category: "JavaScript" },
+//     { title: "Terceiro post", category: "Python" }
+// ]
+
+// posts.forEach((post) => {
+//     console.log(`O post é ${post.title}, da categoria ${post.category}`)
+// })
+
+// // 16 - Includes
+// const brands = ["BM", "VW", "Fiat"]
+
+// console.log(brands.includes("Fiat"))
+// console.log(brands.includes("Kia"))
+
+// if (brands.includes("BMW")) {
+//     console.log("Há carros da marca BMW!")
+// }
+
+// // 17 - reverse
+// const reverseTest = [1, 2, 3, 4, 5]
+
+// reverseTest.reverse()
+// console.log(reverseTest)
+
+// // 18 - trim
+const trimTest = "   testando \n  "
+console.log(trimTest)
+console.log(trimTest.trim())
+
+console.log(trimTest.length)
+console.log(trimTest.trim().length)
+
+// 19 - padStart e padEnd 
+const testePadStart = "1"
+
+const numNumber = testePadStart.padStart(4, "0")
+console.log(numNumber)
+console.log(testePadStart)
+
+const testepadEnd = numNumber.padEnd(10, "0")
+console.log(testepadEnd)

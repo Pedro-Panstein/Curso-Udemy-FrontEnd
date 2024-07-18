@@ -63,7 +63,7 @@ if (m > 5) {
     console.log("M é maior que 5!");
 }
 
-const user = "Pedro";
+const user = "Jenni";
 
 if (user === "Pedro") {
     console.log(`${user} é lindo`);
