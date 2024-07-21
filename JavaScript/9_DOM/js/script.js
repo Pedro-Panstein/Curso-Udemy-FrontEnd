@@ -78,3 +78,15 @@ console.log(footer.clientWidth)
 console.log(footer.clientHeight)
 
 // 12 - posição do elemento
+const product1 = products[0]
+console.log(product1.getBoundingClientRect())
+
+// 13 - css com js
+mainContainer.style.color = "red"
+mainContainer.style.backgroundColor = "#333"
+mainContainer.style.paddingBottom = "3rem"
+
+// 14 - alterando estilos de varios elementos
+for (const li of listItens) {
+    li.style.backgroundColor = "red"
+}
