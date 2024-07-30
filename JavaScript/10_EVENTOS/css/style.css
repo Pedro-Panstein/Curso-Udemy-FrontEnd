@@ -1,0 +1,31 @@
+body{
+    margin-bottom: 1000px;
+}
+
+#btn-container{
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
+    background-color: rgb(50, 104, 155)
+}
+
+#teste{
+    margin-top: 5px;
+    color: #fff;
+    background: rgb(1, 53, 102);
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: .2s;
+    border-radius: 5px;
+}
+
+#teste:hover{
+    color: #000;
+    background: rgb(178, 220, 241);
+    border-color: rgb(1, 53, 102);
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
