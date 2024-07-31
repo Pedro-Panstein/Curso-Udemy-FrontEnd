@@ -1,61 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-:root{
-    --background-fafafa: #fafafa;
-}
-
-body{
+body {
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
     background: linear-gradient(180deg, #db4444 0%, #3f24dd 98%);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    text-align: center;
+    color: #fff;
 }
 
-h2{
-    color: var(--background-fafafa);
-    margin: 5% 0% 2% 0%;
-    font-size: 2rem;
+a {
+    text-decoration: none;
 }
 
-h1 {
-    color: var(--background-fafafa);
-    margin: 2% 0% 2% 0%;
-    font-size: 2rem;
-}
-
-.calculator-container{
-    background-color: var(--background-fafafa);
-    width: 20%;
-    margin: 0 auto;
-    padding: 1%;
-    border-radius: 20px
-}
-
-.insert-numbers{
+#multiplication-form{
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    max-width: 300px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #333;
 }
 
-.insert-numbers input{
-    padding: 10%;
-    width: 60%;
-    border-radius: 10px;
+.form-control{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 0 1rem;
+}
+
+.form-control label{
+    margin-bottom: .6rem;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.form-control input{
+    margin-bottom: 1rem;
+    flex: 1;
+    padding: .6rem .4rem;
+    border: 1px solid #333;
+    width: 100%;
+    border-radius: 5px;
     text-align: center;
 }
 
-.btn{
+#multiplication-form input[type="submit"]{
+    max-height: 50px;
+    padding: .6rem 1.2rem;
+    width: 200px;
+    color: #fff;
     background-color: #333;
-    color: var(--background-fafafa); 
-    padding: 3% 20%; 
-    border-radius: 10px;
-    margin-top: 10%;
+    border: 1px solid #333;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+#multiplication-operations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 1rem auto;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    color: #333;
+    border-radius: 1rem;
+}
+
+#multiplication-operations .row{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    width: 250px;
+
+}
+
+#multiplication-operations .row:last-child{
+    border-bottom: 1px solid #ccc;
+}
+
+#multiplication-operations .result {
+    margin-left: .4rem;
+}
+
+.division{
+    outline: none;
+    border: 3px solid transparent;
+    padding: .5rem 3rem;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: .3s linear all;
+    cursor: pointer;
+}
+
+.texto{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.division:hover{
+    border-color: #000000;
+    background-color: #464545;
+}
+
+#multiplication-table{
+    margin-bottom: 100px;
 }
