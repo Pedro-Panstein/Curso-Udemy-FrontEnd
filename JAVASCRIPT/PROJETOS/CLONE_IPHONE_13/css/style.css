@@ -6,8 +6,7 @@
   overflow-x: hidden;
 }
 
-a,
-li {
+a, li {
   text-decoration: none;
   list-style: none;
 }
@@ -102,9 +101,17 @@ main {
 .description p {
   width: 40%;
   margin: 0 auto 3% auto;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
-.price-and-buy {
-    color: #9e9e9e;
+.price-and-buy h3{
+    color: #6d6d6d;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 3%;
+}
+
+.price-and-buy a {
+  background-color: #0063c7;
+  padding: 2%;
 }
