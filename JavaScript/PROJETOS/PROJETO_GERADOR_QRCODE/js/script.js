@@ -28,3 +28,10 @@ qrCodeInput.addEventListener('keydown', (e) => {
         generateQrCode()
     }
 })
+
+qrCodeInput.addEventListener('keyup', (e) => {
+    if (!qrCodeInput.value){
+        container.classList.remove('active')
+        qrCodeBtn.innerText = "Gerar QR code"    
+    }
+})
