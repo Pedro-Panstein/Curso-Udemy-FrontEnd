@@ -1,9 +1,8 @@
 const container = document.querySelector('.container')
 const qrCodeBtn = document.querySelector('#qr-form button')
-
 const qrCodeInput = document.querySelector('#qr-form input')
-
 const qrCodeImg = document.querySelector('#qr-code img')
+
 function generateQrCode() {
     const qrCodeInputValue = qrCodeInput.value
 
@@ -29,7 +28,7 @@ qrCodeInput.addEventListener('keydown', (e) => {
     }
 })
 
-qrCodeInput.addEventListener('keyup', (e) => {
+qrCodeInput.addEventListener('keyup', () => {
     if (!qrCodeInput.value){
         container.classList.remove('active')
         qrCodeBtn.innerText = "Gerar QR code"    

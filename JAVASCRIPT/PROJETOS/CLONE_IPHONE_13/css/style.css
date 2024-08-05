@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana;
-  overflow-x: hidden;
 }
 
 a, li {
@@ -113,5 +112,14 @@ main {
 
 .price-and-buy a {
   background-color: #0063c7;
-  padding: 2%;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+
+.iphone {
+  margin-top: 5%;
+}
+
+.iphone img {
+  height: 200px;
 }
