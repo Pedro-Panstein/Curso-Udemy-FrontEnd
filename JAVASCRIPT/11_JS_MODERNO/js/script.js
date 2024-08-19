@@ -1,74 +1,74 @@
-// // 1
-// var x = 10;
-// var y = 15;
+// 1
+var x = 10;
+var y = 15;
 
-// if (y > 10) {
-//   var x = 5;
-//   console.log(x);
-// }
+if (y > 10) {
+  var x = 5;
+  console.log(x);
+}
 
-// console.log(x);
+console.log(x);
 
-// let a = 10;
-// let b = 15;
+let a = 10;
+let b = 15;
 
-// if (b > 10) {
-//   let a = 5;
-//   console.log(a);
-// }
+if (b > 10) {
+  let a = 5;
+  console.log(a);
+}
 
-// console.log(a);
+console.log(a);
 
-// function logName() {
-//     const name = "Pedro H"
-//     console.log(name)
-// }
+function logName() {
+    const name = "Pedro H"
+    console.log(name)
+}
 
-// const name = "Jennifer"
+const name = "Jennifer"
 
-// logName()
+logName()
 
-// console.log(name)
+console.log(name)
 
-// // 2 - arrow Functiom
-// const sum = function(a, b){ 
-//     return a + b
-// }
+// 2 - arrow Functiom
+const sum = function(a, b){ 
+    return a + b
+}
 
-// const arrowSum = (a, b) => a + b
+const arrowSum = (a, b) => a + b
 
-// console.log(sum(5, 5))
-// console.log(arrowSum(5, 5))
+console.log(sum(5, 5))
+console.log(arrowSum(5, 5))
 
-// const greeting = (name) => {
-//     if(name){
-//         return `Hello ${name}`
-//     } else {
-//         return "Hello usuario sem nome"
-//     }
-// }
+const greeting = (name) => {
+    if(name){
+        return `Hello ${name}`
+    } else {
+        return "Hello usuario sem nome"
+    }
+}
 
-// console.log(greeting())
-// console.log(greeting("Pedro"))
+console.log(greeting())
+console.log(greeting("Pedro"))
 
-// const user = {
-//     name: "Jennifer",
-//     sayUserName(){
-//         setTimeout(function() {
-//             console.log(this)
-//             console.log(`Username: ${this.name}`)
-//         }, 1000)
-//     },
-//     sayUserNameArrow() {
-//         setTimeout(() => {
-//             console.log(this)
-//             console.log(`Username: ${this.name}`)
-//         },1100)
-//     }
-// }
+const user = {
+    name: "Jennifer",
+    sayUserName(){
+        setTimeout(function() {
+            console.log(this)
+            console.log(`Username: ${this.name}`)
+        }, 1000)
+    },
+    sayUserNameArrow() {
+        setTimeout(() => {
+            console.log(this)
+            console.log(`Username: ${this.name}`)
+        },1100)
+    }
+}
 
-// user.sayUserName();
-// user.sayUserNameArrow();
+user.sayUserName();
+user.sayUserNameArrow();
 
 // 3 - filter
 const arr = [1, 2, 3, 4, 5, 6]
