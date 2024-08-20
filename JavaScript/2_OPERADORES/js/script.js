@@ -104,3 +104,5 @@ console.log("teste" * "opa");
 console.log("10" + 1);
 
 console.log("10" - 1);
+
+console.log("200" - 10)

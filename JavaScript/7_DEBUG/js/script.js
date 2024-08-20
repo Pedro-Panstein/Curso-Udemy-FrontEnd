@@ -74,7 +74,7 @@ checkNumber("teste");
 let x = 10;
 
 if (x != 11) {
-    // throw new Error("O valor de x não pode ser diferente de 11!");
+  // throw new Error("O valor de x não pode ser diferente de 11!");
 }
 
 // 6 - try catch
@@ -109,4 +109,7 @@ function checkArray(arr) {
 
 // checkArray([]);
 
+const testeArray = [1, 23, "546", 7, 68, null, "8", {}, undefined];
+
+checkArray(testeArray);
 checkArray([1, 2, 3]);

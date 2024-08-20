@@ -64,33 +64,33 @@ b.then((v) => console.log(`O resultado é: ${v}`)).catch((err) =>
 
 // 6 - resolvendo varias promises
 const p1 = new Promise((resolve, reject) => {
-    setTimeout(function() {
-        resolve(10)
-    }, 3000)
-})
+  setTimeout(function () {
+    resolve(10);
+  }, 3000);
+});
 
-const p2 = Promise.resolve(10 + 10)
+const p2 = Promise.resolve(10 + 10);
 
 const p3 = new Promise((resolve, reject) => {
-    if(30 > 10) {
-        resolve(30)
-    } else {
-        reject("Erro!")
-    }
-})
+  if (30 > 10) {
+    resolve(30);
+  } else {
+    reject("Erro!");
+  }
+});
 
-Promise.all([p1, p2, p3]).then((values) => console.log(values))
+Promise.all([p1, p2, p3]).then((values) => console.log(values));
 
 // 7 - async functions
 async function somarComDellay(a, b) {
-    return a + b
+  return a + b;
 }
 
 somarComDellay(2, 4).then((value) => {
-    console.log(`O valor da some é: ${value}`)
-})
+  console.log(`O valor da some é: ${value}`);
+});
 
-console.log("Teste async")
+console.log("Teste async");
 
 // 8 - await
 function resolveComDelay() {
@@ -101,13 +101,13 @@ function resolveComDelay() {
   });
 }
 
-async function chamadaAsync(){
-    console.log("Chamando a promisse, e esperando  o resultado")
-    const result = await resolveComDelay()
-    console.log(`O resultado chegou: ${result}`)
+async function chamadaAsync() {
+  console.log("Chamando a promisse, e esperando  o resultado");
+  const result = await resolveComDelay();
+  console.log(`O resultado chegou: ${result}`);
 }
 
-chamadaAsync()
+chamadaAsync();
 
 // 9 - generators
 function* generator() {
@@ -118,6 +118,6 @@ function* generator() {
 
 const gen = generator();
 
-console.log(gen.next().value)
-console.log(gen.next().value)
-console.log(gen.next().value)
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
