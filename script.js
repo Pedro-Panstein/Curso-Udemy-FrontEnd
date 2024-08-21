@@ -2,8 +2,7 @@ const themeButton = document.getElementById("theme");
 
 themeButton.addEventListener("click", () => {
   const variavel = document.documentElement;
-  const darkTheme =
-    getComputedStyle(variavel).getPropertyValue("--fundo") === "#333";
+  const darkTheme = getComputedStyle(variavel).getPropertyValue("--fundo") === "#333";
 
   if (darkTheme) {
     variavel.style.setProperty("--fundo", "#fafafa");
