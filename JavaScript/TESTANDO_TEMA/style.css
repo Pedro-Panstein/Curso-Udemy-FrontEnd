@@ -9,6 +9,7 @@
     --fundo-preto: #333;
     --texto-preto: #000;
     --texto-branco: #fff;
+    --fundo-botao: #525252;
 }
 
 #buttons {
@@ -26,22 +27,26 @@ ul {
 }
 
 li {
-    background-color: #0f5aca;
-    color: #fff;
+    background-color: var(--fundo-preto);
+    color: var(--texto-branco);
     padding: 1rem;
     border-radius: 15px;
-    border: 2px solid #7c7c7c;
+    border: 4px solid var(--fundo-botao);
     cursor: pointer;
+    transition: .2s linear all;
     &:hover {
-        background-color: #0f5acaab;
+        transform: scale(1.02);
     }
 }
 
 .selected {
-    border-color: aqua;
+    border-color: var(--texto-branco);
 }
 
 #theme {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 15px 0px;
     background-color: var(--fundo-branco);
     border-radius: 15px;

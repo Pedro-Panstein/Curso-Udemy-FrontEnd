@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    font-family: Helvetica;
+}
+
+:root {
+    --fundo: #333;
+    --texto: #fff;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fundo);
+    color: var(--texto);
+    width: 100vw;
+}
+
+button {
+    background-color: var(--fundo);
+    color: var(--texto);
+    padding: 1rem;
+    width: 250px;
+    margin: 20px 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: 3px solid var(--texto);
+    cursor: pointer;
+    transition: .2s linear all;
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.return {
+    position: absolute;
+    bottom: 10px;
+    button {
+        width: 150px;
+    }
+}
+
+#last-js {
+    text-align: center;
+}
