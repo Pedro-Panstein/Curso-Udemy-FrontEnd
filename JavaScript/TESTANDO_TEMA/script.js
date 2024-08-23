@@ -33,3 +33,5 @@ themeButton.addEventListener("click", () => {
     console.log("Mudou para preto");
   }
 });
+
+
