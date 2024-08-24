@@ -65,7 +65,7 @@ li {
   position: absolute;
   left: 25%;
   right: 25%;
-  top: 100px;
+  top: 10%;
   border: 2px solid var(--texto-branco);
   cursor: pointer;
   transition: 0.2s linear all;
