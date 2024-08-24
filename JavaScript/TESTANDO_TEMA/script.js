@@ -108,7 +108,7 @@ english.addEventListener("click", () => {
 });
 
 portuguese.addEventListener("click", () => {
-  actualImg.setAttribute("src", "assets/brasil.jpg");
+  actualImg.setAttribute("src", "assets/brasil.png");
   allFlags.classList.add("hidden");
   buttonTheme.innerHTML = "Mudar tema"
   buttonSelect.forEach(span => {
