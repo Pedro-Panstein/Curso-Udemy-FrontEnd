@@ -13,6 +13,8 @@ const root = document.documentElement;
 const notification = document.querySelector(".notification");
 const texto = document.getElementById("texto");
 const themeImage = document.getElementById("theme-image");
+const menuLanguages = document.getElementById("arrow");
+const arrowImg = document.querySelector("#change-arrow img")
 
 themeButton.addEventListener("click", () => {
   // const darkTheme = root.style.getPropertyValue("--fundo-preto") === "#333";
@@ -26,6 +28,7 @@ themeButton.addEventListener("click", () => {
     themeImage.setAttribute("src", "assets/iconMoon.png");
     console.log("Mudou para branco");
     texto.innerHTML = "Tema alterado para: Claro";
+    arrowImg.setAttribute("src", "assets/seta-para-baixo.png")
   } else {
     root.style.setProperty("--fundo-preto", "#333");
     root.style.setProperty("--texto-preto", "#fff");
@@ -34,6 +37,7 @@ themeButton.addEventListener("click", () => {
     themeImage.setAttribute("src", "assets/iconSun.png");
     console.log("Mudou para preto");
     texto.innerHTML = "Tema alterado para: Escuro";
+    arrowImg.setAttribute("src", "assets/seta-para-baixo-branca.png")
   }
 
   notification.classList.remove("hidden");
@@ -80,11 +84,10 @@ font20.addEventListener("click", () => {
   img.style.setProperty("width", "30px");
 });
 
-const menuLanguages = document.getElementById("arrow");
 const allFlags = document.querySelector(".all-flags");
 const portuguese = document.getElementById("portuguese");
 const english = document.getElementById("english");
-const germany = document.getElementById("germany");
+const spanish = document.getElementById("spanish");
 const actualImg = document.getElementById("actualImg");
 const buttonTheme = document.querySelector("#theme span")
 const buttonSelect = document.querySelectorAll(".color span")
@@ -114,8 +117,8 @@ portuguese.addEventListener("click", () => {
   titleFont.innerHTML = "Mudar tamanho da fonte"
 });
 
-germany.addEventListener("click", () => {
-  actualImg.setAttribute("src", "assets/alemanha.png");
+spanish.addEventListener("click", () => {
+  actualImg.setAttribute("src", "assets/espanha.png");
   allFlags.classList.add("hidden");
   buttonTheme.innerHTML = "Cambiar tema"
   buttonSelect.forEach(span => {
