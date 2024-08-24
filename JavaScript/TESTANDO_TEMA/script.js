@@ -81,3 +81,18 @@ font20.addEventListener("click", () => {
   img.style.setProperty("height", "30px")
   img.style.setProperty("width", "30px")
 });
+
+const menuLanguages = document.getElementById("arrow")
+const allFlags = document.querySelector(".all-flags")
+const portuguese = document.getElementById("portuguese");
+const english = document.getElementById("english");
+const germany = document.getElementById("germany");
+const actualImg = document.getElementById("actualImg")
+
+menuLanguages.addEventListener("click", () => {
+  allFlags.classList.toggle("hidden")
+})
+
+english.addEventListener("click", () => {
+  actualImg.setAttribute("src", "assets/eua.png")
+})
