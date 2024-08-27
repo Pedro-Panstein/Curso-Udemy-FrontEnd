@@ -166,7 +166,7 @@ header {
   right: 0px;
   left: 0px;
   bottom: 0px;
-  transition: .3s linear all;
+  transition: 0.3s linear all;
 }
 
 .notification {
@@ -182,7 +182,7 @@ header {
   justify-content: center;
   gap: 20px;
   color: #fff;
-  transition: .3s linear all;
+  transition: 0.3s linear all;
 }
 
 .notification h2 {
@@ -194,4 +194,37 @@ header {
 
 .hidden {
   display: none;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 450px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  #search-container {
+    width: 100%;
+  }
+
+  #search-input {
+    width: 100%;
+  }
+
+  #add-note-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  #notes-container {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+
+  .note .bi-x-lg,
+  .note .bi-file-earmark-plus {
+    opacity: 1;
+    color: #fff;
+  }
 }
