@@ -52,6 +52,15 @@ function createNote(id, content, fixed) {
   textArea.placeholder = "Adicione algum texto...";
   element.appendChild(textArea);
 
+  // Arrastar
+  element.setAttribute("draggable", true); // método de arrastar
+  element.dataset.id = id; // método de arrastar
+ // método de arrastar
+  element.addEventListener("dragstart", handleDragStart); // método de arrastar
+  element.addEventListener("dragover", handleDragOver); // método de arrastar
+  element.addEventListener("drop", handleDrop); // método de arrastar
+
+
   const pinIcon = document.createElement("i");
 
   pinIcon.classList.add(...["bi", "bi-pin"]);
@@ -92,6 +101,42 @@ function createNote(id, content, fixed) {
 
   return element;
 }
+
+function handleDragStart(e) {
+  e.dataTransfer.setData("text/plain", e.target.dataset.id);
+}
+
+// Função para permitir soltar
+function handleDragOver(e) {
+  e.preventDefault();
+}
+
+// Função para gerenciar a ação de soltar
+function handleDrop(e) {
+  e.preventDefault();
+  const draggedNoteId = e.dataTransfer.getData("text/plain");
+  const targetNoteId = e.target.closest(".note").dataset.id;
+
+  if (draggedNoteId !== targetNoteId) {
+    rearrangeNotes(draggedNoteId, targetNoteId);
+  }
+}
+
+// Função para reorganizar as notas no array e atualizar o DOM
+function rearrangeNotes(draggedNoteId, targetNoteId) {
+  const notes = getNotes();
+  
+  const draggedIndex = notes.findIndex(note => note.id == draggedNoteId);
+  const targetIndex = notes.findIndex(note => note.id == targetNoteId);
+  
+  const [draggedNote] = notes.splice(draggedIndex, 1);
+  notes.splice(targetIndex, 0, draggedNote);
+  
+  saveNotes(notes);
+  showNotes();
+}
+
+
 
 function toggleFixNote(id) {
   const notes = getNotes();
@@ -178,7 +223,7 @@ function exportData() {
   const notes = getNotes();
 
   const csvString = [
-    ["ID", "Conteúde", "Fixado?"],
+    ["ID", "Conteúdo", "Fixado"],
     ...notes.map((note) => [note.id, note.content, note.fixed]),
   ].map((e) => e.join(",")).join("\n")
   
