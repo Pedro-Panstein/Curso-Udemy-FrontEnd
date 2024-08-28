@@ -8,10 +8,14 @@
   }
   
   body {
-    background-image: url("../img/fundo.png");
+    background-image: url("img/fundo.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   button {
@@ -53,7 +57,6 @@
   /* Todo Header */
   .todo-container {
     max-width: 450px;
-    margin: 3rem auto 0;
     background-color: #fdfdfd;
     padding: 1.5rem;
     border-radius: 15px;
