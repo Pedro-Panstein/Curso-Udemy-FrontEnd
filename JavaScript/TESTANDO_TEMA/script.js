@@ -20,6 +20,8 @@ themeButton.addEventListener("click", () => {
   // const darkTheme = root.style.getPropertyValue("--fundo-preto") === "#333";
   const darkTheme = getComputedStyle(root).getPropertyValue("--fundo-preto") === "#333";
 
+  console.log(root)
+
   if (darkTheme) {
     root.style.setProperty("--fundo-preto", "#f5f5f5");
     root.style.setProperty("--texto-preto", "#333");
@@ -126,5 +128,3 @@ spanish.addEventListener("click", () => {
   })
   titleFont.innerHTML = "Cambiar el tamaño de fuente"
 });
-
-//MUDAR BANDEIRA DA ALEMANHA PARA A DA ESPANHA
